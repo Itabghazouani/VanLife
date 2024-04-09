@@ -20,7 +20,7 @@ html, body {
     padding: 1.5em;
     display: flex;
     justify-content: space-between;
-    background: #FFF7ED; 
+    background: #FFF7ED;
 }
 
 .navbar--logo {
@@ -44,7 +44,7 @@ html, body {
     display: flex;
     margin-left: .5em;
     gap: .5em;
-    
+
 }
 
 .navbar--links > a {
@@ -71,4 +71,53 @@ html, body {
     line-height: 22.92px;
     text-align: center;
     color: #AAAAAA;
+}
+
+/* Home */
+
+.main--home {
+  min-height: 80vh;
+  color: white;
+  background-image: url("./assets/vanlife-home.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main--home_content {
+  max-height: 100%;
+  max-width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin: 6em auto;
+  text-align: center;
+
+}
+
+.main--home_content > h1 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  line-height: 42px;
+  text-align: left;
+}
+
+.main--home_content > h2 {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+}
+
+.main--home_content > a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 31.66px;
+  color: #ffffff;
+  background-color: #FF8C38;
+  width: 100%;
+  padding: .5em;
 }
