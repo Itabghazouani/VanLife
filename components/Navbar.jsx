@@ -7,7 +7,7 @@ export default function Navbar() {
             <Link to="/" className="navbar--logo">#VANLIFE</Link>
             <div className="navbar--links">
                 <Link to="/about">About</Link>
-                <Link to="#">Vans</Link>
+                <Link to="/vans">Vans</Link>
             </div>
         </nav>
     )

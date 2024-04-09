@@ -9,15 +9,15 @@ html, body {
 }
 
 .container {
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: #FFF7ED;
 }
 
 /* Navbar */
 
 .navbar {
-    padding: 1.5em;
+    padding: 2em 3em;
     display: flex;
     justify-content: space-between;
     background: #FFF7ED;
@@ -37,13 +37,13 @@ html, body {
 .navbar--links:focus,
 .navbar--links:active,
 .navbar--links > a {
-    text-decoration: none
+    text-decoration: none;
+    outline: none;
 }
 
 .navbar--links {
     display: flex;
-    margin-left: .5em;
-    gap: .5em;
+    gap: 1.5em;
 
 }
 
@@ -76,7 +76,7 @@ html, body {
 /* Home */
 
 .main--home {
-  min-height: 80vh;
+  min-height: 100vh;
   color: white;
   background-image: url("./assets/vanlife-home.png");
   background-size: cover;
@@ -119,5 +119,71 @@ html, body {
   color: #ffffff;
   background-color: #FF8C38;
   width: 100%;
-  padding: .5em;
+  padding: .5em 0;
+  border-radius: 5px;
+}
+
+/* About */
+
+.about--image {
+  background-image: url(./assets/vanlife-about-page.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 235px;
+}
+
+.about--content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1em 3em;
+  color: #161616;
+}
+
+.about--content > h1 {
+  font-size: 2rem;
+  line-height: 38px;
+  margin-bottom: .5em;
+}
+
+.about--content_paragraph {
+  margin-bottom: 2.5em;
+}
+
+.about--content_paragraph > p {
+  font-weight: 500;
+  line-height: 22px;
+  margin: 0;
+}
+
+p.margin-btm {
+  margin-bottom: 1.5em;
+}
+
+.about--link_card {
+  background-color: #FFCC8D;
+  padding: 1.5em 1.5em 2.5em;
+  border-radius: 5px;
+  margin-bottom: 1.5em;
+}
+
+.about--link_card_text {
+  margin-bottom: 2rem;
+}
+
+.about--link_card_text > h2 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.about--link_card > a {
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 23.92px;
+  color: #ffffff;
+  background-color: #161616;
+  padding: 1em;
+  border-radius: 10px;
+
 }
