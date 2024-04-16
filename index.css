@@ -513,3 +513,34 @@ i[class*='van-type-'] {
   text-decoration: underline;
   font-weight: 700;
 }
+
+/*  Host Van Detail Info */
+
+
+.host-van-detail-info > h4 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+}
+.host-van-detail-info > h4 > span {
+  font-weight: 500;
+}
+
+/*  Host Van Detail Pricing */
+
+.host-van-price {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.host-van-price > span {
+  font-size: 16px;
+  color: #4D4D4D;
+}
+
+/*  Host Van Detail Photos */
+
+.host-van-detail-image {
+  height: 100px;
+  border-radius: 5px;
+}

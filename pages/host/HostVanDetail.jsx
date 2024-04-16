@@ -51,7 +51,7 @@ export default function HostVanDetail() {
           <NavLink to="pricing" style={currentActiveStyle}>Pricing</NavLink>
           <NavLink to="photos" style={currentActiveStyle}>Photos</NavLink>
         </nav>
-        <Outlet />
+        <Outlet context={{currentVan}}/>
       </div>
     </section>
   )
