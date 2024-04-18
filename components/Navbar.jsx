@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, NavLink } from "react-router-dom"
+import imageUrl from "/assets/avatar-icon.png"
 
 export default function Navbar() {
 
@@ -14,6 +15,7 @@ export default function Navbar() {
         <NavLink to="/host" className={currentLinkClassName}>Host</NavLink>
         <NavLink to="/about" className={currentLinkClassName}>About</NavLink>
         <NavLink to="/vans" className={currentLinkClassName}>Vans</NavLink>
+        <Link to="login" className="login-link"> <img src={imageUrl} className="login-icon"/></Link>
       </nav>
     </header>
   )
