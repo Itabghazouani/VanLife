@@ -8,6 +8,10 @@ export default function Navbar() {
     return isActive ? "current-link" : ""
   }
 
+  function fakeLogOut() {
+    localStorage.removeItem("loggedin")
+  }
+
   return (
     <header className="navbar">
       <Link to="/" className="navbar--logo">#VANLIFE</Link>
@@ -16,6 +20,7 @@ export default function Navbar() {
         <NavLink to="/about" className={currentLinkClassName}>About</NavLink>
         <NavLink to="/vans" className={currentLinkClassName}>Vans</NavLink>
         <Link to="login" className="login-link"> <img src={imageUrl} className="login-icon"/></Link>
+        <button onClick={fakeLogOut}>X</button>
       </nav>
     </header>
   )
